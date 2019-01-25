@@ -1,0 +1,14 @@
+{
+  "name": "nodetutorialday2",
+  "version": "1.0.0",
+  "description": "this is a ndoe js tutorial seris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rabbani",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

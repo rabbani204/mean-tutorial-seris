@@ -1,0 +1,36 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Number</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{# each value}}
+                        {{# each this}}
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>{{this.name}}</td>
+                            <td>{{this.number}}</td>
+                            <td><button type="button"><i class="fa fa-trash" aria-hidden="true"></i>
+                            </button></td>
+                        </tr>
+                        {{/ each}}
+                        {{/ each}}
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>

@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
 router.post('/', (req, res)=>{
   var values = req.body
   items.push(values)
-  console.log(items)
   res.render('index', {value: {items}})
 
 })

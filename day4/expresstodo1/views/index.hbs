@@ -20,14 +20,16 @@
                             <th scope="row">1</th>
                             <td>{{this.name}}</td>
                             <td>{{this.number}}</td>
-                            <td><button type="button"><i class="fa fa-trash" aria-hidden="true"></i>
-                            </button></td>
+                            <td>
+                                <a href="/delete/{{this.id}}" type="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </button>
+                            </td>
                         </tr>
                         {{/ each}}
                         {{/ each}}
                     </tbody>
                 </table>
-
+                 <a href="/additem" type="button">Add New Item</a>
             </div>
             <div class="col-md-1">
 

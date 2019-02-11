@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
     if (err){
       console.log(err)
     }
-    res.render('index', { value: {value}});
+    res.json(value);
   })
 });
 

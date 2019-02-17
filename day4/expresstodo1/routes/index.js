@@ -3,12 +3,13 @@ var router = express.Router();
 var Item = require('../models/item')
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', function(req, res){
   Item.find((err, value)=>{
+    console.log(value)
     if (err){
       console.log(err)
     }
-    res.json(value);
+    res.render('index', {value: {value}})
   })
 });
 
@@ -21,6 +22,11 @@ router.get('/delete/:id', (req, res)=>{
       res.redirect('/')
     }
   })
+})
+
+router.get('/update/:id', (req, res)=>{
+    console.log(req.params.id)
+    var value = Item.find
 })
 
 module.exports = router;
